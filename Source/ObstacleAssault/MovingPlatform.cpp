@@ -15,18 +15,12 @@ AMovingPlatform::AMovingPlatform()
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
-
-	int NumberOfApples = 10;
-	float NumberOfHours = 1.5f;
-	FString MyName = "Abhishek";
-
-	UE_LOG(LogTemp, Display, TEXT("NumberOfApples: %d, NumberOfHours: %.2f, MyName: %s"), NumberOfApples, NumberOfHours, *MyName);
+	UE_LOG(LogTemp, Display, TEXT("MemberFloat: %f, MemberInt: %d"), MemberFloat, MemberInt);
 }
 
 // Called every frame
 void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
