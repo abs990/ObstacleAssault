@@ -1,0 +1,81 @@
+# --------------------------
+# Unreal Engine 5.6 GitIgnore
+# --------------------------
+
+# Compiled object and binary files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build folders
+Build/
+# Except Build configuration files you may want to keep
+!Build/*.cs
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+.vsconfig
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Crash reports
+*.dmp
+
+# Backup and autosave
+*_Backup/
+*.autosave
+
+# Generated project files
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Unreal specific
+*.upproj
+*.uprojectdirs
+*.sln
+
+# Ignore built data packs
+*.pdb
+*.ipch
+
+# Ignore packaged builds
+WindowsNoEditor/
+LinuxNoEditor/
+MacNoEditor/
+Android/
+IOS/
+
+# Ignore Plugins binaries/intermediate
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+Plugins/*/Saved/
+
+# Optional: keep your config, source, and content
+!Config/
+!Source/
+!Content/
+!*.uproject
