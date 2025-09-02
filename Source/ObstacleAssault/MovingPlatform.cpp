@@ -15,7 +15,6 @@ AMovingPlatform::AMovingPlatform()
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
-	UE_LOG(LogTemp, Display, TEXT("MemberFloat: %f, MemberInt: %d"), MemberFloat, MemberInt);
 }
 
 // Called every frame
