@@ -36,6 +36,12 @@ void AMovingPlatform::MovePlatform(float DeltaTime)
 	SetActorLocation(CurrentLocation);
 
 	DistanceMoved = FVector::Dist(StartLocation, CurrentLocation);
+
+	if (DistanceMoved >= MoveDistance)
+	{
+		PlatformVelocity *= -1;
+		StartLocation = CurrentLocation;
+	}
 }
 
 void AMovingPlatform::RotatePlatform(float DeltaTime)
