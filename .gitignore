@@ -79,3 +79,8 @@ Plugins/*/Saved/
 !Source/
 !Content/
 !*.uproject
+
+# Ignore fab content folders
+Content/Survival_Character
+Content/Construction_VOL1
+Content/Asian_Village
