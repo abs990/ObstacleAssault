@@ -52,7 +52,8 @@ void AMovingPlatform::MovePlatform(float DeltaTime)
 
 void AMovingPlatform::RotatePlatform(float DeltaTime)
 {
-	// TODO - rotate the platform
+	FRotator RotationToAdd = RotationVelocity * DeltaTime;
+	AddActorLocalRotation(RotationToAdd);
 }
 
 float AMovingPlatform::GetDistanceMoved()
